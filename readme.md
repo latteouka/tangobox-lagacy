@@ -3,17 +3,17 @@ https://github.com/typeneko/tangobox-lagacy/blob/main/server/src/index.ts
 
 ## Third-party Login
 #### Frontend
-```
-const responseFacebook
+```javascript
+const responseFacebook = (response) => {} 
 
-const responseGoogle
+const responseGoogle = (response) => {} 
 ```
 https://github.com/typeneko/tangobox-lagacy/blob/main/client/src/components/LoginPage/index.tsx
 #### Backend
-```
-router.post("/google", async (req, res) => 
+```javascript
+router.post("/google", async (req, res) => {}
 
-router.post("/facebook", async (req, res) =>
+router.post("/facebook", async (req, res) => {}
 ```
 https://github.com/typeneko/tangobox-lagacy/blob/main/server/src/routers/user.ts
 
