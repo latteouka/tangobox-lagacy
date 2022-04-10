@@ -1,0 +1,19 @@
+/* add css styles here (optional) */
+
+.wrapper {
+  display: inline-block;
+  font-size: inherit;
+  margin-top: 1em;
+  position: relative;
+  line-height: 1.8;
+}
+.furigana {
+  position: absolute;
+  top: -5%;
+  font-size: 50%;
+  width: 100%;
+  text-align: center;
+}
+.kanjiWrapper {
+  position: relative;
+}

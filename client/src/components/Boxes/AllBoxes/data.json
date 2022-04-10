@@ -1,0 +1,6 @@
+[
+  { "label": "五十音 平假名", "value": "休閒、普通、激進", "free": true, "path": "gojyuh" },
+  { "label": "五十音 片假名", "value": "休閒、普通、激進", "free": true, "path": "gojyuk" },
+  { "label": "N5", "value": "669", "free": true,"path": "n5"  },
+  { "label": "N4", "value": "建構中" , "free": true, "path": "n4"}
+]
