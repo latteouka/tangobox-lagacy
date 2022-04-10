@@ -19,3 +19,52 @@ router.post("/facebook", async (req, res) => {}
 
 ## ECPAY
 [server/src/routers/subscribe.ts](https://github.com/typeneko/tangobox-lagacy/blob/main/server/src/routers/subscribe.ts)
+## Database Schema
+[server/prisma/schema.prisma](https://github.com/typeneko/tangobox-lagacy/blob/main/server/prisma/schema.prisma)
+```
+model User {
+  id          Int        @default(autoincrement()) @id
+  email       String     @unique
+  uuid        String     @unique
+  password    String?
+  role        Int        @default(0)
+  due         DateTime?
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+}
+
+model Trade {
+  id          Int        @default(autoincrement()) @id
+  userId      Int        
+  subId       String     @unique
+  rtncode     Int?
+  rtnmsg      String? 
+  tradeNo     String?
+  tradeamt    Int?
+  paymentDate String?
+  paymentType String?
+  tradeDate   String?
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+}
+
+model Subrecord {
+  id          Int        @default(autoincrement()) @id
+  userId      Int
+  subId       String
+  rtncode     Int
+  rtnmsg      String 
+  periodType  String
+  frequency   Int
+  execTimes   Int
+  amount      Int
+  gwsr        Int
+  time        String
+  authcode    String
+  firstAmount Int
+  totalTimes  Int
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+}
+```
+
